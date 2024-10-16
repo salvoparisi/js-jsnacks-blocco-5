@@ -4,11 +4,9 @@ const people = [
   { name: 'Marco', age: 67 }
 ];
 
-let peopleName=[]
-for(let i=0; i<people.length; i++){
-  peopleName.push(people[i].name)
-}
-console.log(peopleName);
+people.forEach(function(person){
+  console.log(person.name);
+})
 
 // Stampa in console tutti i nomi
 // Risultato: 'Paolo', 'Giulia', 'Marco'
